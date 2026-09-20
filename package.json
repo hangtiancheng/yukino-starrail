@@ -1,14 +1,14 @@
 {
-  "name": "swifty-starrail",
+  "name": "yukino-starrail",
   "version": "0.0.1",
   "type": "commonjs",
   "description": "star rail toolbox",
   "main": "./out/main/index.js",
   "author": "https://github.com/hangtiancheng",
-  "homepage": "https://github.com/hangtiancheng/swifty-starrail",
+  "homepage": "https://github.com/hangtiancheng/yukino-starrail",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hangtiancheng/swifty-starrail"
+    "url": "https://github.com/hangtiancheng/yukino-starrail"
   },
   "scripts": {
     "format": "prettier -w . --experimental-cli",
@@ -33,7 +33,7 @@
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.2",
     "@electron-toolkit/utils": "^4.0.0",
-    "@swifty.js/sentry": "latest",
+    "@yukino.js/sentry": "latest",
     "@tanstack/react-virtual": "^3.14.11",
     "electron-updater": "^6.8.9",
     "knex": "^3.3.0",

@@ -201,8 +201,8 @@ target
 *.local.yaml
 **/*.local.yaml
 
-.swifty/
-**/.swifty/
+.yukino/
+**/.yukino/
 
 storybook-static/
 **/storybook-static/

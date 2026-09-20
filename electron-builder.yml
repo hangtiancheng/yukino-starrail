@@ -1,4 +1,4 @@
-appId: com.github.hangtiancheng.swifty-starrail
+appId: com.github.hangtiancheng.yukino-starrail
 productName: 星穹工具箱
 directories:
   buildResources: build
@@ -12,7 +12,7 @@ files:
 asarUnpack:
   - resources/**
 win:
-  executableName: swifty-starrail
+  executableName: yukino-starrail
   icon: build/favicon.ico
 nsis:
   artifactName: ${name}-${version}-setup.${ext}
@@ -35,6 +35,6 @@ npmRebuild: false
 publish:
   provider: github
   owner: hangtiancheng
-  repo: swifty-starrail
+  repo: yukino-starrail
 electronDownload:
   mirror: https://npmmirror.com/mirrors/electron/

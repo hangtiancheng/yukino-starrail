@@ -154,7 +154,7 @@ export function Component() {
             <p>Star Rail Toolbox v{version}</p>
             <a
               className="inline-flex items-center gap-1 text-purple-500 hover:text-purple-600"
-              href="https://github.com/hangtiancheng/swifty-starrail"
+              href="https://github.com/hangtiancheng/yukino-starrail"
               target="_blank"
               rel="noreferrer"
             >

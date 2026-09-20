@@ -43,7 +43,7 @@ export function AchievementHead(props: AchievementHeadProps) {
     setShowMenu(false);
     const result = await useAchievementStore
       .getState()
-      .importData("swifty-starrail");
+      .importData("yukino-starrail");
     if (result.msg === "OK") {
       toast.info("Import succeeded", "Achievement data imported");
     } else if (result.msg !== "Canceled") {
@@ -55,7 +55,7 @@ export function AchievementHead(props: AchievementHeadProps) {
     setShowMenu(false);
     const result = await useAchievementStore
       .getState()
-      .exportData("swifty-starrail");
+      .exportData("yukino-starrail");
     if (result.msg === "OK" && "data" in result) {
       const path = (result as { msg: string; data: { path: string } }).data
         .path;

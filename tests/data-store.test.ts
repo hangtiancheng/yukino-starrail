@@ -13,7 +13,7 @@ let dbPath: string;
 let store: DataStore;
 
 beforeEach(() => {
-  dbPath = join(tmpdir(), `swifty-store-test-${randomUUID()}.db`);
+  dbPath = join(tmpdir(), `yukino-store-test-${randomUUID()}.db`);
   store = new DataStore(dbPath);
 });
 

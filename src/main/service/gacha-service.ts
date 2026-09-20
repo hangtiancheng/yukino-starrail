@@ -189,7 +189,7 @@ class GachaService {
           uid,
           lang: "zh-cn",
           region_time_zone: 8,
-          export_app: "swifty-starrail",
+          export_app: "yukino-starrail",
           export_app_version: app.getVersion(),
           export_timestamp: Math.floor(Date.now() / 1000),
         },
@@ -205,7 +205,7 @@ class GachaService {
           buttonLabel: "Export",
           defaultPath: join(
             app.getPath("desktop"),
-            `swifty-starrail-gacha-export-v${app.getVersion()}-${dataStore.listUids("gacha")[uid]}-${uid}.SRGF.json`,
+            `yukino-starrail-gacha-export-v${app.getVersion()}-${dataStore.listUids("gacha")[uid]}-${uid}.SRGF.json`,
           ),
           filters: [{ name: "SRGF json", extensions: ["json"] }],
         },
@@ -226,7 +226,7 @@ class GachaService {
           : Object.keys(dataStore.listUids("gacha"));
       const exportData = {
         info: {
-          export_app: "swifty-starrail",
+          export_app: "yukino-starrail",
           export_app_version: app.getVersion(),
           export_timestamp: Math.floor(Date.now() / 1000),
           version: "v4.1",
@@ -254,7 +254,7 @@ class GachaService {
           buttonLabel: "Export",
           defaultPath: join(
             app.getPath("desktop"),
-            `swifty-starrail-gacha-export-v${app.getVersion()}.UIGF.json`,
+            `yukino-starrail-gacha-export-v${app.getVersion()}.UIGF.json`,
           ),
           filters: [{ name: "UIGF json", extensions: ["json"] }],
         },

@@ -3,7 +3,7 @@ import { cpSync } from "fs";
 import { defineConfig } from "electron-vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
-import { sentryPlugin7 } from "@swifty.js/sentry/vite";
+import { sentryPlugin7 } from "@yukino.js/sentry/vite";
 function copyStatic() {
   return {
     name: "copy-static",

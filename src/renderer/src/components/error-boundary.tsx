@@ -8,7 +8,7 @@ interface State {
   error: Error | null;
 }
 
-/** @deprecated Use ReactErrorBoundary from @swifty.js/sentry/react instead */
+/** @deprecated Use ReactErrorBoundary from @yukino.js/sentry/react instead */
 export class ErrorBoundary extends Component<Props, State> {
   state: State = { error: null };
 

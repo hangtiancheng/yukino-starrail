@@ -1,4 +1,4 @@
-# Swifty StarRail
+# Yukino StarRail
 
 A modern desktop toolbox for **Honkai: Star Rail** — track achievements, analyze your warp history, and unlock the frame rate, all from one clean interface.
 
@@ -18,7 +18,7 @@ Built with Electron, React, and TypeScript. Runs on **Windows** and **macOS**.
 - Mark achievements complete manually, with batch operations.
 - Automatically detect mutually exclusive achievements — completing one grays out the linked ones.
 - Sync completed achievements straight from your account via a miHoYo / HoYoLAB web login (supports CN and global servers).
-- Import / export achievement data in the swifty-starrail format for backups and migration.
+- Import / export achievement data in the yukino-starrail format for backups and migration.
 - Manage multiple UIDs and switch between accounts.
 
 ### Warp history analyzer
@@ -213,7 +213,7 @@ Zustand stores manage each feature's state:
 | Virtual list  | @tanstack/react-virtual 3                                            |
 | Icons         | lucide-react                                                         |
 | Logging       | pino + pino-pretty                                                   |
-| Telemetry     | @swifty.js/sentry                                                    |
+| Telemetry     | @yukino.js/sentry                                                    |
 | Packaging     | electron-builder 26 (NSIS for Windows, DMG/ZIP for macOS)            |
 | Auto-update   | electron-updater 6 (GitHub Releases)                                 |
 | Lint / format | ESLint 9 + Prettier 3 + prettier-plugin-tailwindcss                  |

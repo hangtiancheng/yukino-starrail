@@ -133,11 +133,11 @@ class AchievementService {
     if (!dataStore.hasUid("achievement", uid)) {
       return { msg: "UID does not exist" };
     }
-    if (type !== "swifty-starrail") return { msg: "Unknown export format" };
+    if (type !== "yukino-starrail") return { msg: "Unknown export format" };
 
     const exportData = {
       info: {
-        export_app: "swifty-starrail",
+        export_app: "yukino-starrail",
         export_app_version: app.getVersion(),
         export_timestamp: Math.floor(Date.now() / 1000),
       },
@@ -151,7 +151,7 @@ class AchievementService {
         buttonLabel: "Export",
         defaultPath: join(
           app.getPath("desktop"),
-          `swifty-starrail-achievement-export-v${app.getVersion()}-${dataStore.listUids("achievement")[uid]}-${uid}.json`,
+          `yukino-starrail-achievement-export-v${app.getVersion()}-${dataStore.listUids("achievement")[uid]}-${uid}.json`,
         ),
         filters: [{ name: "json", extensions: ["json"] }],
       },
@@ -171,7 +171,7 @@ class AchievementService {
     if (!dataStore.hasUid("achievement", uid)) {
       return { msg: "UID does not exist" };
     }
-    if (type !== "swifty-starrail") return { msg: "Unknown import format" };
+    if (type !== "yukino-starrail") return { msg: "Unknown import format" };
 
     const result = await dialog.showOpenDialog(
       BrowserWindow.getAllWindows()[0],
@@ -187,7 +187,7 @@ class AchievementService {
       return { msg: "Canceled" };
 
     const importData = JSON.parse(await readFile(result.filePaths[0], "utf-8"));
-    if (importData?.info?.export_app !== "swifty-starrail") {
+    if (importData?.info?.export_app !== "yukino-starrail") {
       return { msg: "Unknown source app" };
     }
     if (!importData?.list) return { msg: "No data" };

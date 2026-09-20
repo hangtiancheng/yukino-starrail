@@ -3,14 +3,14 @@ import "./main.css";
 import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router";
 import { router } from "./routes";
-import { ReactErrorBoundary } from "@swifty.js/sentry/react";
+import { ReactErrorBoundary } from "@yukino.js/sentry/react";
 import { ErrorFallback } from "./components/error-boundary";
-import { init, enablePlugin } from "@swifty.js/sentry";
+import { init, enablePlugin } from "@yukino.js/sentry";
 import {
   ScreenRecordPlugin,
   ExposurePlugin,
   PerformancePlugin,
-} from "@swifty.js/sentry/plugins";
+} from "@yukino.js/sentry/plugins";
 
 init({
   dsn: import.meta.env.DEV ? "/dev/sentry" : "ipc",

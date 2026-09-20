@@ -10,8 +10,8 @@ let dbPath: string;
 let store: DataStore;
 
 beforeEach(() => {
-  dataDir = join(tmpdir(), `swifty-legacy-test-${randomUUID()}`);
-  dbPath = join(tmpdir(), `swifty-legacy-test-${randomUUID()}.db`);
+  dataDir = join(tmpdir(), `yukino-legacy-test-${randomUUID()}`);
+  dbPath = join(tmpdir(), `yukino-legacy-test-${randomUUID()}.db`);
   mkdirSync(dataDir, { recursive: true });
   store = new DataStore(dbPath);
 });

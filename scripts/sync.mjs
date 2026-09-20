@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Sync static assets from Firefly repository to swifty-starrail
+ * Sync static assets from Firefly repository to yukino-starrail
  *
  * Usage: node sync.mjs
  *
