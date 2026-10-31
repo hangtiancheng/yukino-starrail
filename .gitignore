@@ -211,3 +211,6 @@ storybook-static/
 **/.playwright-cli/
 test-results/
 **/test-results/
+
+# electron-builder build resources (app icons, entitlements)
+!/build/
