@@ -1,13 +1,13 @@
 appId: com.github.hangtiancheng.yukino-starrail
-productName: 星穹工具箱
+productName: 星穹铁道工具箱
 directories:
   buildResources: build
 files:
   - "!**/.vscode/*"
   - "!src/*"
   - "!electron.vite.config.{js,ts,mjs,cjs}"
-  - "!{.eslintcache,eslint.config.mjs,.prettierignore,.prettierrc.yaml,dev-app-update.yml,CHANGELOG.md,README.md}"
-  - "!{.env,.env.*,.npmrc,pnpm-lock.yaml}"
+  - "!{.eslintcache,eslint.config.mjs,.prettier.config.mjs,prettierignore,dev-app-update.yml,CHANGELOG.md,README.md}"
+  - "!{.env,.env.*,.npmrc,pnpm-lock.yaml,pnpm-workspace.yaml}"
   - "!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}"
 asarUnpack:
   - resources/**
@@ -25,16 +25,24 @@ nsis:
 mac:
   icon: build/pwa-512x512.png
   entitlementsInherit: build/entitlements.mac.plist
+  extendInfo:
+    NSDocumentsFolderUsageDescription: Application requests access to the user's Documents folder.
+    NSDownloadsFolderUsageDescription: Application requests access to the user's Downloads folder.
   notarize: false
   target:
     - dmg
     - zip
 dmg:
   artifactName: ${name}-${version}.${ext}
+linux:
+  target:
+    - AppImage
+    - snap
+    - deb
+  maintainer: https://github.com/hangtiancheng
+  category: Utility
 npmRebuild: false
 publish:
   provider: github
   owner: hangtiancheng
   repo: yukino-starrail
-electronDownload:
-  mirror: https://npmmirror.com/mirrors/electron/

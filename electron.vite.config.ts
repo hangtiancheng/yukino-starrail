@@ -3,7 +3,7 @@ import { cpSync } from "fs";
 import { defineConfig } from "electron-vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
-import { sentryPlugin7 } from "@yukino.js/sentry/vite";
+import { sentryPlugin } from "@yukino.js/sentry/vite";
 function copyStatic() {
   return {
     name: "copy-static",
@@ -31,7 +31,7 @@ export default defineConfig({
         "@renderer": resolve(import.meta.dirname, "src/renderer/src"),
       },
     },
-    plugins: [react(), tailwindcss(), sentryPlugin7({ dsn: "/dev/sentry" })],
+    plugins: [react(), tailwindcss(), sentryPlugin({ dsn: "/dev/sentry" })],
     build: {
       cssMinify: "lightningcss",
     },

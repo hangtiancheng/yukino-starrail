@@ -1,3 +1,4 @@
 provider: github
 owner: hangtiancheng
 repo: yukino-starrail
+updaterCacheDirName: yukino-starrail-updater
